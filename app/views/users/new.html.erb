@@ -1,16 +1,20 @@
-<%= form_for :session, url: login_path do |f| %>
+<%= form_for @user do |f| %>
+
+    <div class="input">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
 
     <div class="input">
         <%= f.label :email %>
         <%= f.text_field :email %>
     </div>
-    
+
     <div class="input">
         <%= f.label :password %>
         <%= f.password_field :password %>
     </div>
-    
 
-    <%= f.submit "Log In", class: "submit-btn" %>
+    <%= f.submit "Create User", class: "submit-btn"%>
 
 <% end %>

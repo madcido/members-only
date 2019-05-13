@@ -1,0 +1,13 @@
+
+<h1>Write your post </h1>
+
+<%= form_for @post do |f| %>
+        
+    <div class="input">
+        <%= f.label :content %>
+        <%= f.text_area :content %>
+    </div>
+
+    <%= f.submit "Post", class: "submit-btn" %>
+
+<% end %>
