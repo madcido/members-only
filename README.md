@@ -1,24 +1,6 @@
-# README
+Microverse Ruby on Rails project: Authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project specification: build an exclusive clubhouse where only members can see the posts authors
 
-Things you may want to cover:
+Author: <a href="https://github.com/madcido">Fabio Carmo</a> / <a href="https://github.com/danmontielh">Daniel Montiel</a>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
