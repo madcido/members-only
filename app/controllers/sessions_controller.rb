@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
       remember user
       redirect_to root_path
     else
+      flash.now[:error] = "Invalid login/password"
       render :new 
     end
   end

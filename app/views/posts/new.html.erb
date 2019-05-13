@@ -1,12 +1,8 @@
+<%= form_for @post, html: {class: "col flex-end"} do |f| %>
+    
+    <h1>Write your secrets</h1>
 
-<h1>Write your post </h1>
-
-<%= form_for @post do |f| %>
-        
-    <div class="input">
-        <%= f.label :content %>
-        <%= f.text_area :content %>
-    </div>
+    <%= f.text_area :content, size: "40x5" %>
 
     <%= f.submit "Post", class: "submit-btn" %>
 

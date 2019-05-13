@@ -14,14 +14,17 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
-            redirect_to root_path
+            flash[:success] = "New user created"
+            redirect_to users_path
         else
+            flash.now[:error] = "Fill at least the password field..."
             render "new"
         end
     end
 
     def destroy
         User.find_by(id: params[:id]).delete
+        flash[:success] = "User deleted"
         redirect_to users_path
     end
 

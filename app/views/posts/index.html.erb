@@ -3,7 +3,7 @@
         <li>
             <p><%= post.content %></p>
             <% if logged_in? %>
-                <p>By: <%= post.user.name %></p>
+                <p>Author: <%= post.user.name %></p>
             <% end %>
         </li>
     <% end %>
