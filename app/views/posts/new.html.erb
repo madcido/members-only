@@ -1,0 +1,9 @@
+<%= form_for @post, html: {class: "col flex-end"} do |f| %>
+    
+    <h1>Write your secrets</h1>
+
+    <%= f.text_area :content, size: "40x5" %>
+
+    <%= f.submit "Post", class: "submit-btn" %>
+
+<% end %>
