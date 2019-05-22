@@ -1,20 +1,22 @@
-<%= form_for @user, html: {class: "col flex-end"} do |f| %>
-
-    <div class="input">
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-    </div>
-
-    <div class="input">
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-    </div>
-
-    <div class="input">
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-    </div>
-
-    <%= f.submit "Create User", class: "submit-btn"%>
-
-<% end %>
+<div class="centered">
+    <%= form_for @user, html: {class: "col flex-end"} do |f| %>
+    
+        <div class="input">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+        </div>
+    
+        <div class="input">
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+        </div>
+    
+        <div class="input">
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+        </div>
+    
+        <%= f.submit "Create User", class: "submit-btn"%>
+    
+    <% end %>
+</div>
