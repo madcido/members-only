@@ -102,6 +102,11 @@ textarea{
     border-color: white;
 }
 
+.centered {
+    width: 400px;
+    margin: 0 auto;
+}
+
 form {
     margin: 0 auto;
     width: 300px;

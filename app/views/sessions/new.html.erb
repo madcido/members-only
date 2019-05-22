@@ -1,22 +1,26 @@
-<%= form_for :session, url: login_path, html: {class: "col flex-end"} do |f| %>
+<div class="centered">
+  <h1>Log In</h1>
+
+  <%= form_for :session, url: login_path, html: {class: "col flex-end"} do |f| %>
 
     <div class="input">
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+	<%= f.label :email %>
+	<%= f.text_field :email %>
     </div>
     
     <div class="input">
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
     </div>
 
     <div class="input">
-        <%= f.label :remember_me do %>
-            <%= f.check_box :remember_me %>
-            <span>Remember me</span>
-        <% end %>
+	<%= f.label :remember_me do %>
+	    <%= f.check_box :remember_me %>
+	    <span>Remember me</span>
+	<% end %>
     </div>
  
     <%= f.submit "Log In", class: "submit-btn" %>
 
-<% end %>
+  <% end %>
+</div>
